@@ -1,8 +1,12 @@
 #!/usr/bin/env node
 
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { createMCPServer } from '@intelagent/mcp-shared';
 import { EnrichmentService } from './enrichment-service.js';
 import { enrichmentTools } from './tools.js';
+
+const pkg = JSON.parse(readFileSync(join(__dirname, '..', 'package.json'), 'utf-8'));
 
 const service = new EnrichmentService({
   clearbitApiKey: process.env.CLEARBIT_API_KEY,
@@ -14,8 +18,8 @@ const service = new EnrichmentService({
 });
 
 createMCPServer({
-  name: 'intelagent-enrichment',
-  version: '1.0.0',
+  name: pkg.name,
+  version: pkg.version,
   tools: enrichmentTools(service),
   resources: [
     {
