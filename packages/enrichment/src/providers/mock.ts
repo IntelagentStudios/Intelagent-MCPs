@@ -75,15 +75,16 @@ export function mockContactEnrichment(input: ContactEnrichmentInput): ContactEnr
 }
 
 export function mockEmailVerification(email: string): EmailVerificationResult {
-  const isValid = email.includes('@') && !email.includes('invalid');
+  const emailStr = String(email);
+  const isValid = emailStr.includes('@') && !emailStr.includes('invalid');
   return {
     success: true,
-    email,
+    email: emailStr,
     valid: isValid,
     deliverable: isValid,
-    disposable: email.includes('tempmail') || email.includes('guerrilla'),
-    freeProvider: email.includes('gmail') || email.includes('yahoo') || email.includes('hotmail'),
-    role: email.startsWith('info@') || email.startsWith('support@') || email.startsWith('sales@'),
+    disposable: emailStr.includes('tempmail') || emailStr.includes('guerrilla'),
+    freeProvider: emailStr.includes('gmail') || emailStr.includes('yahoo') || emailStr.includes('hotmail'),
+    role: emailStr.startsWith('info@') || emailStr.startsWith('support@') || emailStr.startsWith('sales@'),
     catchAll: false,
     mxRecords: true,
     smtpValid: isValid,

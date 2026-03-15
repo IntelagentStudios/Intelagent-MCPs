@@ -1,12 +1,27 @@
 {
   "name": "@intelagent/mcp-enrichment",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "MCP server for multi-source entity enrichment (company, contact, email, phone)",
   "bin": {
     "mcp-enrichment": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./service": {
+      "types": "./dist/lib.d.ts",
+      "default": "./dist/lib.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
@@ -14,8 +29,31 @@
     "test": "vitest run",
     "test:watch": "vitest"
   },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "enrichment",
+    "clearbit",
+    "hunter",
+    "twilio",
+    "company-data",
+    "contact-enrichment",
+    "email-verification",
+    "phone-validation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs.git",
+    "directory": "packages/enrichment"
+  },
+  "homepage": "https://github.com/IntelagentStudios/Intelagent-MCPs/tree/main/packages/enrichment",
+  "bugs": {
+    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs/issues"
+  },
+  "author": "Intelagent Studios",
+  "license": "MIT",
   "dependencies": {
-    "@intelagent/mcp-shared": "*",
+    "@intelagent/mcp-shared": "^1.0.0",
     "@modelcontextprotocol/sdk": "^1.12.0"
   },
   "devDependencies": {
@@ -23,5 +61,8 @@
     "typescript": "^5.3.0",
     "tsx": "^4.0.0",
     "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
