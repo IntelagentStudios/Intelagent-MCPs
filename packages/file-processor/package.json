@@ -1,6 +1,6 @@
 {
   "name": "@intelagent/mcp-file-processor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for universal text extraction, keyword extraction, language detection, and text chunking for RAG pipelines",
   "bin": {
     "mcp-file-processor": "./dist/index.js"
@@ -66,5 +66,6 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  }
+  },
+  "mcpName": "io.github.IntelagentStudios/mcp-file-processor"
 }

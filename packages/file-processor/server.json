@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.IntelagentStudios/mcp-file-processor",
+  "description": "Text extraction, keyword extraction, language detection, and chunking for RAG",
+  "repository": {
+    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs",
+    "source": "github",
+    "subfolder": "packages/file-processor"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@intelagent/mcp-file-processor",
+      "version": "0.1.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": []
+    }
+  ]
+}
