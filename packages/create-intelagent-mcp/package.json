@@ -1,8 +1,8 @@
 {
-  "name": "create-intelagent-mcp",
+  "name": "@intelagent/create-mcp",
   "version": "1.0.0",
   "description": "Scaffold a new MCP server project with @intelagent/mcp-shared",
-  "bin": { "create-intelagent-mcp": "./dist/index.js" },
+  "bin": { "create-intelagent-mcp": "./dist/index.js", "create-mcp": "./dist/index.js" },
   "main": "./dist/index.js",
   "files": ["dist", "template"],
   "scripts": {

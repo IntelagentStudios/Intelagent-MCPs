@@ -113,10 +113,15 @@ function run(): void {
     }
   }
 
-  // Also update the bin field key in package.json
+  // Update the bin field key in package.json (JSON-level replacement)
   const pkgPath = join(targetDir, 'package.json');
-  const pkgContent = readFileSync(pkgPath, 'utf-8');
-  writeFileSync(pkgPath, pkgContent, 'utf-8');
+  const pkgJson = JSON.parse(readFileSync(pkgPath, 'utf-8'));
+  if (pkgJson.bin && pkgJson.bin['my-mcp-server']) {
+    const binValue = pkgJson.bin['my-mcp-server'];
+    delete pkgJson.bin['my-mcp-server'];
+    pkgJson.bin[options.name] = binValue;
+  }
+  writeFileSync(pkgPath, JSON.stringify(pkgJson, null, 2) + '\n', 'utf-8');
 
   console.log('  Created project structure');
 
