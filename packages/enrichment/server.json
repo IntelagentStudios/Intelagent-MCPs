@@ -1,0 +1,60 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.IntelagentStudios/mcp-enrichment",
+  "description": "Multi-source entity enrichment: company data, contacts, email verification, and phone validation",
+  "repository": {
+    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs",
+    "source": "github",
+    "subfolder": "packages/enrichment"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@intelagent/mcp-enrichment",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "Clearbit API key for company and contact enrichment",
+          "isRequired": false,
+          "isSecret": true,
+          "name": "CLEARBIT_API_KEY"
+        },
+        {
+          "description": "Hunter.io API key for email discovery and verification",
+          "isRequired": false,
+          "isSecret": true,
+          "name": "HUNTER_API_KEY"
+        },
+        {
+          "description": "Apollo.io API key for contact and company data",
+          "isRequired": false,
+          "isSecret": true,
+          "name": "APOLLO_API_KEY"
+        },
+        {
+          "description": "Twilio Account SID for phone validation",
+          "isRequired": false,
+          "isSecret": true,
+          "name": "TWILIO_ACCOUNT_SID"
+        },
+        {
+          "description": "Twilio Auth Token for phone validation",
+          "isRequired": false,
+          "isSecret": true,
+          "name": "TWILIO_AUTH_TOKEN"
+        },
+        {
+          "description": "Cache TTL in seconds for enrichment results (default: 86400)",
+          "isRequired": false,
+          "isSecret": false,
+          "name": "ENRICHMENT_CACHE_TTL"
+        }
+      ]
+    }
+  ]
+}

@@ -64,5 +64,6 @@
   },
   "engines": {
     "node": ">=20.0.0"
-  }
+  },
+  "mcpName": "io.github.IntelagentStudios/mcp-enrichment"
 }
