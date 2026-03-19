@@ -7,7 +7,7 @@ Open-source [Model Context Protocol](https://modelcontextprotocol.io/) servers b
 | Package | Description | Status |
 |---------|-------------|--------|
 | [`@intelagent/mcp-enrichment`](./packages/enrichment) | Company, contact, email & phone enrichment via Clearbit, Hunter.io, Twilio | Available |
-| `@intelagent/mcp-file-processor` | Document text extraction, keyword detection, chunking | Planned |
+| [`@intelagent/mcp-file-processor`](./packages/file-processor) | Document text extraction, keyword detection, chunking | Available |
 | `@intelagent/mcp-web-research` | Web search, page fetch, research synthesis | Planned |
 | `@intelagent/mcp-approval-queue` | Human-in-the-loop approval workflows | Planned |
 | `@intelagent/mcp-knowledge-grid` | Document indexing, semantic search, context composition | Planned |
