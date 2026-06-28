@@ -2,12 +2,12 @@
   "name": "@intelagent/mcp-servers",
   "version": "1.0.0",
   "private": true,
-  "description": "Open-source MCP servers by Intelagent",
+  "description": "Open-source MCP servers by Opafex",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "npm run build -w packages/shared && npm run build -w packages/enrichment && npm run build -w packages/file-processor && npm run build -w packages/create-intelagent-mcp",
+    "build": "npm run build -w packages/shared && npm run build -w packages/enrichment && npm run build -w packages/file-processor && npm run build -w packages/create-opafex-mcp",
     "test": "npm run test --workspaces --if-present",
     "clean": "rm -rf packages/*/dist",
     "typecheck": "npm run build"
@@ -17,8 +17,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs.git"
+    "url": "https://github.com/opafex/Opafex-MCPs.git"
   },
-  "author": "Intelagent Studios",
+  "author": "Opafex",
   "license": "MIT"
 }

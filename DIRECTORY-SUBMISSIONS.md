@@ -19,7 +19,7 @@ This is the best fit — the section description reads "Provides access to custo
 ### Draft Entry
 
 ```markdown
-- [IntelagentStudios/Intelagent-MCPs](https://github.com/IntelagentStudios/Intelagent-MCPs) 📇 ☁️ 🍎 🪟 🐧 - Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs. Mock mode and pluggable cache included.
+- [Opafex/Opafex-MCPs](https://github.com/opafex/Opafex-MCPs) 📇 ☁️ 🍎 🪟 🐧 - Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs. Mock mode and pluggable cache included.
 ```
 
 **Format notes:**
@@ -45,7 +45,7 @@ This is the best fit — the section description reads "Provides access to custo
 
 1. **Add `mcpName` to `package.json`:**
    ```json
-   "mcpName": "io.github.intelagentstudios/enrichment"
+   "mcpName": "io.github.opafexstudios/enrichment"
    ```
 
 2. **Publish to npm** (already done: `@intelagent/mcp-enrichment`).
@@ -59,12 +59,12 @@ This is the best fit — the section description reads "Provides access to custo
    ```json
    {
      "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-     "name": "io.github.intelagentstudios/enrichment",
+     "name": "io.github.opafexstudios/enrichment",
      "description": "Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs.",
-     "title": "Intelagent Enrichment",
-     "websiteUrl": "https://github.com/IntelagentStudios/Intelagent-MCPs",
+     "title": "Opafex Enrichment",
+     "websiteUrl": "https://github.com/opafex/Opafex-MCPs",
      "repository": {
-       "url": "https://github.com/IntelagentStudios/Intelagent-MCPs",
+       "url": "https://github.com/opafex/Opafex-MCPs",
        "source": "github",
        "subfolder": "packages/mcp-enrichment"
      },
@@ -120,7 +120,7 @@ This is the best fit — the section description reads "Provides access to custo
 If you still want a README entry, the format under "Third-Party Servers > Community Servers" would be:
 
 ```markdown
-- **[Intelagent Enrichment](https://github.com/IntelagentStudios/Intelagent-MCPs)** - Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs.
+- **[Opafex Enrichment](https://github.com/opafex/Opafex-MCPs)** - Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs.
 ```
 
 However, since the list is deprecated, prefer the MCP Registry route above.
@@ -150,7 +150,7 @@ Publish to the MCP Registry first (section 2), then wait for automatic ingestion
 
 Based on typical directory requirements:
 - **Name:** @intelagent/mcp-enrichment
-- **URL:** https://github.com/IntelagentStudios/Intelagent-MCPs
+- **URL:** https://github.com/opafex/Opafex-MCPs
 - **npm:** https://www.npmjs.com/package/@intelagent/mcp-enrichment
 - **Description:** Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs. Mock mode, pluggable cache, 17.3 kB.
 - **Category:** Data Enrichment / Customer Data
@@ -169,7 +169,7 @@ Based on typical directory requirements:
 MCPlane has a streamlined submission form:
 
 1. Navigate to https://mcplane.com/mcp_servers/new
-2. Enter the **GitHub Repository URL**: `https://github.com/IntelagentStudios/Intelagent-MCPs`
+2. Enter the **GitHub Repository URL**: `https://github.com/opafex/Opafex-MCPs`
 3. Submit
 
 MCPlane auto-extracts metadata from the repository. No additional fields are visible on the public form.

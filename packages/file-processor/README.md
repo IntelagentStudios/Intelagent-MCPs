@@ -194,7 +194,7 @@ const result = await service.processFile(
 
 ## Contributing
 
-Found a bug or have a feature request? [Open an issue](https://github.com/IntelagentStudios/Intelagent-MCPs/issues).
+Found a bug or have a feature request? [Open an issue](https://github.com/opafex/Opafex-MCPs/issues).
 
 ## License
 

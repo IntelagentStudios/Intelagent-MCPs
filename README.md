@@ -1,6 +1,6 @@
-# Intelagent MCPs
+# Opafex MCPs
 
-Open-source [Model Context Protocol](https://modelcontextprotocol.io/) servers by [Intelagent](https://intelagent.com). Each server is a standalone npm package usable with Claude Code, Claude Desktop, Cursor, and any MCP-compatible client.
+Open-source [Model Context Protocol](https://modelcontextprotocol.io/) servers by [Opafex](https://opafex.com). Each server is a standalone npm package usable with Claude Code, Claude Desktop, Cursor, and any MCP-compatible client.
 
 ## Servers
 
@@ -16,8 +16,8 @@ Open-source [Model Context Protocol](https://modelcontextprotocol.io/) servers b
 
 ```bash
 # Clone and install
-git clone https://github.com/IntelagentStudios/Intelagent-MCPs.git
-cd Intelagent-MCPs
+git clone https://github.com/opafex/Opafex-MCPs.git
+cd Opafex-MCPs
 npm install
 npm run build
 
@@ -34,7 +34,7 @@ Create or edit `.mcp.json` in your project root:
   "mcpServers": {
     "enrichment": {
       "command": "node",
-      "args": ["/path/to/Intelagent-MCPs/packages/enrichment/dist/index.js"],
+      "args": ["/path/to/Opafex-MCPs/packages/enrichment/dist/index.js"],
       "env": {
         "CLEARBIT_API_KEY": "sk-...",
         "HUNTER_API_KEY": "...",

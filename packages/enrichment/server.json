@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.IntelagentStudios/mcp-enrichment",
+  "name": "io.github.Opafex/mcp-enrichment",
   "description": "Multi-source entity enrichment: company data, contacts, email verification, and phone validation",
   "repository": {
-    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs",
+    "url": "https://github.com/opafex/Opafex-MCPs",
     "source": "github",
     "subfolder": "packages/enrichment"
   },

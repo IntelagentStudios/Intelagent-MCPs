@@ -8,8 +8,8 @@ Uses [Clearbit](https://clearbit.com/), [Hunter.io](https://hunter.io/), and [Tw
 
 ```bash
 # Clone and build from source
-git clone https://github.com/IntelagentStudios/Intelagent-MCPs.git
-cd Intelagent-MCPs
+git clone https://github.com/opafex/Opafex-MCPs.git
+cd Opafex-MCPs
 npm install && npm run build
 ```
 
@@ -26,7 +26,7 @@ Create or edit `.mcp.json` in your project root:
   "mcpServers": {
     "enrichment": {
       "command": "node",
-      "args": ["/path/to/Intelagent-MCPs/packages/enrichment/dist/index.js"],
+      "args": ["/path/to/Opafex-MCPs/packages/enrichment/dist/index.js"],
       "env": {
         "CLEARBIT_API_KEY": "sk-...",
         "HUNTER_API_KEY": "...",
@@ -241,9 +241,9 @@ const service = new EnrichmentService({
 
 ## Contributing
 
-Found a bug or have a feature request? [Open an issue](https://github.com/IntelagentStudios/Intelagent-MCPs/issues).
+Found a bug or have a feature request? [Open an issue](https://github.com/opafex/Opafex-MCPs/issues).
 
-Pull requests welcome — see the [main repo](https://github.com/IntelagentStudios/Intelagent-MCPs) for development setup.
+Pull requests welcome — see the [main repo](https://github.com/opafex/Opafex-MCPs) for development setup.
 
 ## License
 

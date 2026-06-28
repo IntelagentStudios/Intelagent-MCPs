@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.IntelagentStudios/mcp-file-processor",
+  "name": "io.github.Opafex/mcp-file-processor",
   "description": "Text extraction, keyword extraction, language detection, and chunking for RAG",
   "repository": {
-    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs",
+    "url": "https://github.com/opafex/Opafex-MCPs",
     "source": "github",
     "subfolder": "packages/file-processor"
   },

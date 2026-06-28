@@ -1,18 +1,42 @@
 {
   "name": "@intelagent/mcp-shared",
   "version": "1.0.0",
-  "description": "Shared utilities for Intelagent MCP servers",
+  "description": "Shared utilities for building MCP servers — server factory, caching, config, logging, validation",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch"
   },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "server",
+    "toolkit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opafex/Opafex-MCPs.git",
+    "directory": "packages/shared"
+  },
+  "homepage": "https://github.com/opafex/Opafex-MCPs/tree/main/packages/shared",
+  "bugs": {
+    "url": "https://github.com/opafex/Opafex-MCPs/issues"
+  },
+  "author": "Opafex",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   }
 }

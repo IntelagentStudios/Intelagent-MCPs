@@ -43,14 +43,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs.git",
+    "url": "https://github.com/opafex/Opafex-MCPs.git",
     "directory": "packages/enrichment"
   },
-  "homepage": "https://github.com/IntelagentStudios/Intelagent-MCPs/tree/main/packages/enrichment",
+  "homepage": "https://github.com/opafex/Opafex-MCPs/tree/main/packages/enrichment",
   "bugs": {
-    "url": "https://github.com/IntelagentStudios/Intelagent-MCPs/issues"
+    "url": "https://github.com/opafex/Opafex-MCPs/issues"
   },
-  "author": "Intelagent Studios",
+  "author": "Opafex",
   "license": "MIT",
   "dependencies": {
     "@intelagent/mcp-shared": "^1.0.0",
@@ -65,5 +65,5 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "mcpName": "io.github.IntelagentStudios/mcp-enrichment"
+  "mcpName": "io.github.Opafex/mcp-enrichment"
 }

@@ -55,7 +55,7 @@ function parseArgs(args: string[]): Options {
 
 function printHelp(): void {
   console.log(`
-Usage: create-intelagent-mcp <directory> [options]
+Usage: create-opafex-mcp <directory> [options]
 
 Create a new MCP server project with @intelagent/mcp-shared.
 
@@ -67,8 +67,8 @@ Options:
   -h, --help             Show this help message
 
 Examples:
-  npx create-intelagent-mcp my-enrichment-tool
-  npx create-intelagent-mcp my-tool --name @myorg/mcp-tool --no-git
+  npx create-opafex-mcp my-enrichment-tool
+  npx create-opafex-mcp my-tool --name @myorg/mcp-tool --no-git
 `);
 }
 

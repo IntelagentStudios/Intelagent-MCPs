@@ -1,6 +1,6 @@
 # my-mcp-server
 
-A [Model Context Protocol](https://modelcontextprotocol.io/) server built with [@intelagent/mcp-shared](https://github.com/IntelagentStudios/Intelagent-MCPs).
+A [Model Context Protocol](https://modelcontextprotocol.io/) server built with [@intelagent/mcp-shared](https://github.com/opafex/Opafex-MCPs).
 
 ## Quick Start
 
@@ -50,7 +50,7 @@ npm run test:watch # Watch mode
 4. Wire it up in `src/index.ts`
 5. Add tests in `tests/`
 
-See the [enrichment MCP](https://github.com/IntelagentStudios/Intelagent-MCPs/tree/main/packages/enrichment) for a full production example.
+See the [enrichment MCP](https://github.com/opafex/Opafex-MCPs/tree/main/packages/enrichment) for a full production example.
 
 ## License
 
