@@ -1,4 +1,4 @@
-import type { ToolDefinition } from '@intelagent/mcp-shared';
+import type { ToolDefinition } from '@opafex/mcp-shared';
 import type { TextService } from '../services/text-service.js';
 
 export function textTools(service: TextService): ToolDefinition[] {

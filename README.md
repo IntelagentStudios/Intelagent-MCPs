@@ -6,11 +6,11 @@ Open-source [Model Context Protocol](https://modelcontextprotocol.io/) servers b
 
 | Package | Description | Status |
 |---------|-------------|--------|
-| [`@intelagent/mcp-enrichment`](./packages/enrichment) | Company, contact, email & phone enrichment via Clearbit, Hunter.io, Twilio | Available |
-| [`@intelagent/mcp-file-processor`](./packages/file-processor) | Document text extraction, keyword detection, chunking | Available |
-| `@intelagent/mcp-web-research` | Web search, page fetch, research synthesis | Planned |
-| `@intelagent/mcp-approval-queue` | Human-in-the-loop approval workflows | Planned |
-| `@intelagent/mcp-knowledge-grid` | Document indexing, semantic search, context composition | Planned |
+| [`@opafex/mcp-enrichment`](./packages/enrichment) | Company, contact, email & phone enrichment via Clearbit, Hunter.io, Twilio | Available |
+| [`@opafex/mcp-file-processor`](./packages/file-processor) | Document text extraction, keyword detection, chunking | Available |
+| `@opafex/mcp-web-research` | Web search, page fetch, research synthesis | Planned |
+| `@opafex/mcp-approval-queue` | Human-in-the-loop approval workflows | Planned |
+| `@opafex/mcp-knowledge-grid` | Document indexing, semantic search, context composition | Planned |
 
 ## Quick Start
 
@@ -59,7 +59,7 @@ npm test             # Run all tests
 ### Adding a New Server
 
 1. Create `packages/<server-name>/` with `package.json`, `tsconfig.json`, and `src/`
-2. Use `@intelagent/mcp-shared` for the server bootstrap (`createMCPServer`)
+2. Use `@opafex/mcp-shared` for the server bootstrap (`createMCPServer`)
 3. Define tools in `tools.ts`, wire up in `index.ts`
 4. Add tests in `__tests__/`
 
@@ -67,7 +67,7 @@ See [`packages/enrichment`](./packages/enrichment) as a reference implementation
 
 ## Shared Utilities
 
-[`@intelagent/mcp-shared`](./packages/shared) provides:
+[`@opafex/mcp-shared`](./packages/shared) provides:
 
 - **`createMCPServer()`** — Reusable MCP server bootstrap with tool/resource registration and stdio transport
 - **Validation helpers** — Email, domain, phone format validation

@@ -1,5 +1,5 @@
 {
-  "name": "@intelagent/mcp-shared",
+  "name": "@opafex/mcp-shared",
   "version": "1.0.0",
   "description": "Shared utilities for building MCP servers — server factory, caching, config, logging, validation",
   "main": "./dist/index.js",

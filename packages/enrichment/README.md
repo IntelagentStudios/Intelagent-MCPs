@@ -1,4 +1,4 @@
-# @intelagent/mcp-enrichment
+# @opafex/mcp-enrichment
 
 MCP server for multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery.
 
@@ -164,7 +164,7 @@ Find the email address for a specific person at a company.
 
 ### `server_info` (built-in)
 
-Returns server metadata: name, version, registered tools, and resources. Added automatically by `@intelagent/mcp-shared`.
+Returns server metadata: name, version, registered tools, and resources. Added automatically by `@opafex/mcp-shared`.
 
 ## Resources
 
@@ -207,8 +207,8 @@ npm start        # Run compiled server
 The enrichment service can be used programmatically (not just as an MCP server):
 
 ```typescript
-import { EnrichmentService } from '@intelagent/mcp-enrichment/service';
-import type { CacheProvider } from '@intelagent/mcp-enrichment/service';
+import { EnrichmentService } from '@opafex/mcp-enrichment/service';
+import type { CacheProvider } from '@opafex/mcp-enrichment/service';
 
 const service = new EnrichmentService({
   clearbitApiKey: 'sk-...',
@@ -223,8 +223,8 @@ const result = await service.enrichCompany({ domain: 'stripe.com' });
 The default in-memory cache works out of the box. For Redis, SQLite, or any custom store, implement the `CacheProvider` interface:
 
 ```typescript
-import { EnrichmentService } from '@intelagent/mcp-enrichment/service';
-import type { CacheProvider } from '@intelagent/mcp-enrichment/service';
+import { EnrichmentService } from '@opafex/mcp-enrichment/service';
+import type { CacheProvider } from '@opafex/mcp-enrichment/service';
 
 const redisCache: CacheProvider = {
   async get(key) { /* ... */ },

@@ -1,5 +1,5 @@
 {
-  "name": "@intelagent/mcp-enrichment",
+  "name": "@opafex/mcp-enrichment",
   "version": "0.1.1",
   "description": "MCP server for multi-source entity enrichment (company, contact, email, phone)",
   "bin": {
@@ -53,7 +53,7 @@
   "author": "Opafex",
   "license": "MIT",
   "dependencies": {
-    "@intelagent/mcp-shared": "^1.0.0",
+    "@opafex/mcp-shared": "^1.0.0",
     "@modelcontextprotocol/sdk": "^1.12.0"
   },
   "devDependencies": {

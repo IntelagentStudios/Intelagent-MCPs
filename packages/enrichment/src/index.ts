@@ -2,7 +2,7 @@
 
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { createMCPServer } from '@intelagent/mcp-shared';
+import { createMCPServer } from '@opafex/mcp-shared';
 import { EnrichmentService } from './enrichment-service.js';
 import { enrichmentTools } from './tools.js';
 

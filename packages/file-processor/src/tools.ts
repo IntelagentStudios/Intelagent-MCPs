@@ -1,4 +1,4 @@
-import type { ToolDefinition } from '@intelagent/mcp-shared';
+import type { ToolDefinition } from '@opafex/mcp-shared';
 import type { FileProcessorService } from './file-processor-service.js';
 
 export function fileProcessorTools(service: FileProcessorService): ToolDefinition[] {

@@ -59,7 +59,7 @@ export interface MCPServerConfig {
  *
  * @example
  * ```ts
- * import { createMCPServer } from '@intelagent/mcp-shared';
+ * import { createMCPServer } from '@opafex/mcp-shared';
  *
  * await createMCPServer({
  *   name: 'my-server',

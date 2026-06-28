@@ -1,4 +1,4 @@
-# @intelagent/mcp-file-processor
+# @opafex/mcp-file-processor
 
 MCP server for universal text extraction, keyword extraction, language detection, and text chunking — designed for RAG pipelines.
 
@@ -7,7 +7,7 @@ Supports PDF, DOCX, CSV, JSON, Markdown, HTML, and code files. Zero platform dep
 ## Installation
 
 ```bash
-npm install @intelagent/mcp-file-processor
+npm install @opafex/mcp-file-processor
 ```
 
 Requires **Node.js 20+**.
@@ -21,7 +21,7 @@ Requires **Node.js 20+**.
   "mcpServers": {
     "file-processor": {
       "command": "npx",
-      "args": ["@intelagent/mcp-file-processor"]
+      "args": ["@opafex/mcp-file-processor"]
     }
   }
 }
@@ -180,7 +180,7 @@ npm start        # Run compiled server
 ## Library Usage
 
 ```typescript
-import { FileProcessorService } from '@intelagent/mcp-file-processor/service';
+import { FileProcessorService } from '@opafex/mcp-file-processor/service';
 
 const service = new FileProcessorService();
 

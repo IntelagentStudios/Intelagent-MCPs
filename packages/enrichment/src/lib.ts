@@ -1,8 +1,8 @@
 /**
  * Library exports for using the enrichment service programmatically.
  *
- * Import from '@intelagent/mcp-enrichment/service' for library usage.
- * The default entry point ('@intelagent/mcp-enrichment') starts the MCP server.
+ * Import from '@opafex/mcp-enrichment/service' for library usage.
+ * The default entry point ('@opafex/mcp-enrichment') starts the MCP server.
  */
 export { EnrichmentService } from './enrichment-service.js';
 export { enrichmentTools } from './tools.js';

@@ -1,4 +1,4 @@
-import type { ToolDefinition } from '@intelagent/mcp-shared';
+import type { ToolDefinition } from '@opafex/mcp-shared';
 import type { EnrichmentService } from './enrichment-service.js';
 
 export function enrichmentTools(service: EnrichmentService): ToolDefinition[] {

@@ -1,5 +1,5 @@
 import type { PhoneVerificationResult } from '../types.js';
-import { formatPhoneE164 } from '@intelagent/mcp-shared';
+import { formatPhoneE164 } from '@opafex/mcp-shared';
 
 export async function twilioVerifyPhone(
   phone: string,

@@ -1,7 +1,7 @@
 /**
  * Library exports for using the file processor service programmatically.
  *
- * Import from '@intelagent/mcp-file-processor/service' for library usage.
+ * Import from '@opafex/mcp-file-processor/service' for library usage.
  * The default entry point starts the MCP server.
  */
 export { FileProcessorService } from './file-processor-service.js';

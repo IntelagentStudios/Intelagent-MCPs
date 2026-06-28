@@ -1,6 +1,6 @@
 # MCP Directory Submissions
 
-Draft PR entries and submission instructions for `@intelagent/mcp-enrichment`.
+Draft PR entries and submission instructions for `@opafex/mcp-enrichment`.
 
 ---
 
@@ -48,7 +48,7 @@ This is the best fit — the section description reads "Provides access to custo
    "mcpName": "io.github.opafexstudios/enrichment"
    ```
 
-2. **Publish to npm** (already done: `@intelagent/mcp-enrichment`).
+2. **Publish to npm** (already done: `@opafex/mcp-enrichment`).
 
 3. **Install `mcp-publisher` CLI:**
    ```bash
@@ -73,7 +73,7 @@ This is the best fit — the section description reads "Provides access to custo
        {
          "registryType": "npm",
          "registryBaseUrl": "https://registry.npmjs.org",
-         "identifier": "@intelagent/mcp-enrichment",
+         "identifier": "@opafex/mcp-enrichment",
          "version": "1.0.0",
          "transport": {
            "type": "stdio"
@@ -149,9 +149,9 @@ Publish to the MCP Registry first (section 2), then wait for automatic ingestion
 ### Fields to Prepare
 
 Based on typical directory requirements:
-- **Name:** @intelagent/mcp-enrichment
+- **Name:** @opafex/mcp-enrichment
 - **URL:** https://github.com/opafex/Opafex-MCPs
-- **npm:** https://www.npmjs.com/package/@intelagent/mcp-enrichment
+- **npm:** https://www.npmjs.com/package/@opafex/mcp-enrichment
 - **Description:** Multi-source entity enrichment — company data, contact lookup, email verification, phone validation, and email discovery via Clearbit, Hunter.io, and Twilio APIs. Mock mode, pluggable cache, 17.3 kB.
 - **Category:** Data Enrichment / Customer Data
 - **License:** MIT

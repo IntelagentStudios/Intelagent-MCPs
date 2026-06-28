@@ -15,7 +15,7 @@ interface Options {
 function parseArgs(args: string[]): Options {
   const positional: string[] = [];
   let name: string | undefined;
-  let description = 'An MCP server built with @intelagent/mcp-shared';
+  let description = 'An MCP server built with @opafex/mcp-shared';
   let install = true;
   let git = true;
 
@@ -57,7 +57,7 @@ function printHelp(): void {
   console.log(`
 Usage: create-opafex-mcp <directory> [options]
 
-Create a new MCP server project with @intelagent/mcp-shared.
+Create a new MCP server project with @opafex/mcp-shared.
 
 Options:
   --name <name>          Package name (defaults to directory name)
@@ -101,7 +101,7 @@ function run(): void {
   // Apply replacements
   const replacements: [string, string][] = [
     ['my-mcp-server', options.name],
-    ['An MCP server built with @intelagent/mcp-shared', options.description],
+    ['An MCP server built with @opafex/mcp-shared', options.description],
   ];
 
   // Replace in key files
