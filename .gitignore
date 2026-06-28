@@ -4,3 +4,6 @@ dist/
 .env
 .env.*
 !.env.example
+
+# MCP registry auth tokens (local secrets — never commit)
+.mcpregistry_*
